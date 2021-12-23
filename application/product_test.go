@@ -68,5 +68,4 @@ func TestProduct_IsValid(t *testing.T) {
 	product.Price = -10
 	_, err = product.IsValid()
 	require.Equal(t, "the price must be greater or equal zero", err.Error())
-
 }
